@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1388534400000,
+        "description": "1st todo list example from json",
+        "completed": false
+    },
+    {
+        "id": 1420070400000,
+        "description": "2nd todo list example from json",
+        "completed": false
+    },
+    {
+        "id": 1388534443300,
+        "description": "3rd todo list example from json",
+        "completed": false
+    },
+    {
+        "id": 1471981608064,
+        "description": "4th todo list example from json",
+        "completed": false
+    }
+]

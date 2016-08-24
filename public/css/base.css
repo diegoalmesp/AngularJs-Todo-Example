@@ -1,0 +1,36 @@
+body, input, button, p, h1, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+}
+
+body { font-weight: 300; }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.todos-container {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.todos-container .completed {
+  background-color: #ddd;
+}
+
+.todos-container input[type=text] {
+  width: 90%;
+  border-radius: 2px;
+  border: 1px solid #000;
+  margin: 2px 0;
+  padding: 9px;
+}

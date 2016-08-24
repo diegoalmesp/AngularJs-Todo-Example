@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Todo List</title>
+    <!-- Not present in the tutorial. Just for basic styling. -->
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+    </style>
+  </head>
+  <body>
+    <h2>Todo List AngularJs</h2>
+    <div id="content" class="todos-container" ng-app="todoApp" ng-controller="TodoController as vm">
+      <form>
+        <input type="text" name="newtodo" ng-model="vm.newtodo">
+        <button ng-click="vm.addTodo()">add</button>
+      </form>
+      <!--  -->
+      <ul>
+        <li ng-repeat="todo in vm.todos track by $index">
+          <input type="checkbox" name="check" ng-click="vm.markAsCompleted($index)" ng-checked="todo.completed">
+          <span ng-class="{'completed': todo.completed }">{{todo.description}}</span>
+          <button ng-click="vm.deleteTodo($index)">x</button>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="src/app.js"></script>
+  </body>
+</html>
