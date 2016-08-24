@@ -11,3 +11,7 @@ this is a todo list made as an example for a lessons on Angular Vs React Js
     npm install
 
     npm start
+
+# License
+
+See the LICENSE.md file
